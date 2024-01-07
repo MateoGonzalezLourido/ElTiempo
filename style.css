@@ -1,0 +1,176 @@
+body {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-clima-calendario {
+    position: relative;
+    min-width: 220px;
+    width: 50%;
+    max-width: 260px;
+    height: 115px;
+    min-height: 175px;
+    max-height: 200px;
+    background-color: #053a49;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px #7d878e;
+    cursor: pointer;
+    user-select: none;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.div-nombre-lugar {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    height: 22px;
+    min-width: 45%;
+    font-size: 17px;
+    font-family: "roboto", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.7px;
+    color: #f4f4f4;
+}
+
+.div-nombre-lugar:hover {
+    text-decoration: underline;
+}
+
+.div-img-tiempo {
+    position: absolute;
+    top: 0px;
+    right: 0%;
+    width: 50%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.img-tiempo {
+    position: absolute;
+    top: -5px;
+    right: 20px;
+    transform: scale(1.2);
+}
+
+.div-text-tiempo {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 25%;
+    font-size: 14.5px;
+    font-family: "roboto", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.75px;
+    text-align: center;
+    color: #f4f4f4;
+    margin-top: 12px;
+}
+
+.div-text-tiempo::first-letter {
+    text-transform: capitalize;
+}
+
+.div-text-temperatura-actual {
+    position: absolute;
+    top: 50px;
+    height: 20px;
+    width: 40%;
+    left: 0%;
+    font-size: 15.5px;
+    font-family: "roboto", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f4f4f4;
+}
+
+.div-text-temperatura-maxima {
+    position: absolute;
+    top: 75px;
+    height: 20px;
+    width: 50%;
+    left: 0%;
+    font-size: 15.5px;
+    font-family: "roboto", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f4f4f4;
+}
+
+.img-temperatura-actual {
+    position: relative;
+    top: 0px;
+    height: 100%;
+    left: 8px;
+}
+
+.img-humedad-actual {
+    position: relative;
+    top: -2px;
+    height: 100%;
+    right: 8px;
+}
+
+.div-text-temperatura-minima {
+    position: absolute;
+    top: 100px;
+    height: 20px;
+    width: 50%;
+    left: 0%;
+    font-size: 15.5px;
+    font-family: "roboto", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f4f4f4;
+}
+
+.div-text-humedad-actual {
+    position: absolute;
+    top: calc(60% + 5px);
+    right: 0%;
+    height: 18px;
+    width: 50%;
+    font-size: 13.5px;
+    font-family: "roboto", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.85px;
+    display: flex;
+    justify-content: center;
+    color: #f4f4f4;
+}
+
+.img-viento-actual {
+    position: relative;
+    top: -2px;
+    height: 100%;
+    right: 8px;
+}
+
+.div-text-viento {
+    position: absolute;
+    top: calc(60% + 30px);
+    right: 0%;
+    height: 18px;
+    width: 50%;
+    font-size: 13.5px;
+    line-height: 18px;
+    font-family: "roboto", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.9px;
+    display: flex;
+    justify-content: center;
+    color: #f4f4f4;
+}
